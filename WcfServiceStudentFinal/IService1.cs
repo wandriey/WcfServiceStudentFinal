@@ -18,7 +18,7 @@ namespace WcfServiceStudentFinal
 
 
         [OperationContract]
-        List<Student> FindStudents(string name);
+        Student FindStudents(string name);
 
 
         [OperationContract]
@@ -26,10 +26,10 @@ namespace WcfServiceStudentFinal
 
 
         [OperationContract]
-        void RemoveStudent(int telefonKey);
+        void RemoveStudent(string navn);
 
 
         [OperationContract]
-        List<Student> EditStudent(string name);
+        void EditStudent(string navn, string klassenavn, int rum);
     }
 }

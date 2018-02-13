@@ -12,7 +12,7 @@ namespace WcfServiceStudentFinal
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
-        private List<Student> _dictionary = new List<Student>();
+        private List<Student> _list = new List<Student>();
         public Service1()
         {
             Student student1 = new Student("Jonas", "F3", 3);
@@ -22,27 +22,31 @@ namespace WcfServiceStudentFinal
 
         public void AddStudent(string navn, string klassenavn, int rum)
         {
-            _dictionary.Add(new Student(navn, klassenavn, rum));
+            _list.Add(new Student(navn, klassenavn, rum));
         }
 
-        public List<Student> EditStudent(string name)
+        public Student FindStudents(string name)
         {
-            throw new NotImplementedException();
-        }
+            Student FoundStudent = _list.Find(x => x.Name.Equals(name));
 
-        public List<Student> FindStudents(string name)
-        {
-            throw new NotImplementedException();
+            return FoundStudent;
         }
 
         public List<Student> GetAllStudent()
         {
-            throw new NotImplementedException();
+            return _list;
         }
 
-        public void RemoveStudent(int telefonKey)
+        public void RemoveStudent(string navn)
         {
-            throw new NotImplementedException();
+            _list.Remove(FindStudents(navn));
+        }
+
+        public void EditStudent(string navn, string klassenavn, int rum)
+        {
+            RemoveStudent(navn);
+            AddStudent(navn, klassenavn, rum);
+
         }
     }
 }
