@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceStudentFinal", "WcfServiceStudentFinal\WcfServiceStudentFinal.csproj", "{BE0A8EA0-5BB8-4353-A87C-EC2268DA9EE5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceStudentFinalTests", "WcfServiceStudentFinalTests\WcfServiceStudentFinalTests.csproj", "{EE355EAD-05D6-4963-B5CC-D917C34DAE02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BE0A8EA0-5BB8-4353-A87C-EC2268DA9EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE0A8EA0-5BB8-4353-A87C-EC2268DA9EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE0A8EA0-5BB8-4353-A87C-EC2268DA9EE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE355EAD-05D6-4963-B5CC-D917C34DAE02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE355EAD-05D6-4963-B5CC-D917C34DAE02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE355EAD-05D6-4963-B5CC-D917C34DAE02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE355EAD-05D6-4963-B5CC-D917C34DAE02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
