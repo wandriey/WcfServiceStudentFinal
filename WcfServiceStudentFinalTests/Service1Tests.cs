@@ -14,7 +14,10 @@ namespace WcfServiceStudentFinal.Tests
         [TestMethod()]
         public void Service1Test()
         {
-            Assert.Fail();
+            //arrange
+            Service1 service = new Service1();
+            //act 
+            service.AddStudent("Jonas", "9A", 2);
         }
 
         [TestMethod()]

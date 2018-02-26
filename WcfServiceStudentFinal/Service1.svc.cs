@@ -18,6 +18,9 @@ namespace WcfServiceStudentFinal
             Student student1 = new Student("Jonas", "F3", 3);
             Student student2 = new Student("kasper", "F3", 5);
             Student student3 = new Student("Ian", "F3", 3);
+            _list.Add(student1);
+            _list.Add(student2);
+            _list.Add(student3);
         }
 
         public void AddStudent(string navn, string klassenavn, int rum)
